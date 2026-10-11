@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sikho Saath Mein | Excel, Word, Computer Basics & Office Skills</title>
+<meta name="description" content="Sikho Saath Mein: simple tutorials on MS Excel, MS Word, computer basics, keyboard shortcuts, office tips and job-related computer skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14305a;--ink2:#41567c;--sun:#f6b52c;--sky:#e6f4ff;--skymain:#5bbcf5;--paper:#fbfdff;--line:#cfe3f5;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Nunito Sans",system-ui,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;max-width:1040px;margin:0 auto;flex-wrap:wrap}
+.logo{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:800;font-size:1.25rem;text-decoration:none}
+.logo span{background:var(--sun);padding:0 6px;border-radius:4px;margin-left:2px}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:700;font-size:.95rem;color:var(--ink2)}
+nav a:hover{color:var(--ink)}
+nav a.ytlink{background:#e62117;color:#fff;padding:4px 14px;border-radius:6px}
+nav a.ytlink:hover{background:#c41a11;color:#fff}
+.hero{background:var(--skymain);color:var(--ink);padding:72px 0 80px}
+.hero .wrap{max-width:1040px}
+.hero .wrap>div{max-width:640px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;background:var(--sun);color:var(--ink);padding:0 .15em;border-radius:8px}
+.hero p{color:var(--ink);max-width:46ch;margin:18px 0 28px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--sun);color:var(--ink);font-weight:800;padding:13px 24px;border-radius:8px;text-decoration:none;border:2px solid var(--sun)}
+.btn:hover{background:#ffc94d}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink);margin-left:10px}
+.btn.ghost:hover{background:rgba(255,255,255,.4)}
+.keys{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.key{min-width:56px;padding:12px 16px;text-align:center;font-weight:800;font-size:1.05rem;color:var(--ink);background:var(--white);border-radius:10px;box-shadow:0 5px 0 #2f8fcc}
+.key.hot{background:var(--sun);box-shadow:0 5px 0 #b98516}
+.plus{color:var(--ink);font-weight:800}
+.cap{color:var(--ink);font-weight:700;font-size:.9rem;margin-left:4px}
+section{padding:64px 0}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:12px}
+.lead{color:var(--ink2);max-width:60ch;margin:0 0 32px}
+.about{background:var(--sky)}
+.about .box{max-width:720px}
+.about p{font-size:1.1rem;margin:0 0 20px}
+.about ul{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:10px}
+.about li{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-weight:600}
+.about .close{font-weight:700;font-size:1.15rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card .ic{font-size:1.8rem}
+.card h3{font-size:1.2rem;margin:10px 0 6px}
+.card p{margin:0;color:var(--ink2);font-size:.98rem}
+.dl{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--white);border:2px solid var(--ink);border-radius:14px;padding:28px}
+.dl h3{font-size:1.4rem;margin-bottom:4px}
+.dl p{margin:0;color:var(--ink2)}
+.dl .btn{background:var(--skymain);color:var(--ink);border-color:var(--ink)}
+.dl .btn:hover{background:#7ccaf8}
+.soon{margin-top:16px;color:var(--ink2);font-size:.95rem}
+.yt{background:var(--skymain);color:var(--ink);text-align:center}
+.yt p{color:var(--ink);margin:0 auto 26px;max-width:50ch}
+footer{background:#3aa6e6;color:var(--ink);padding:28px 0;font-size:.92rem;text-align:center}
+footer a{color:var(--ink);text-decoration:underline}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.hero{padding:48px 0 56px}.btn.ghost{margin:12px 0 0}section{padding:48px 0}}
+.topics{margin:0;padding-left:24px;max-width:720px;list-style:disc}
+.topics li{margin:0 0 14px;padding-left:4px}
+.topics li::marker{color:var(--skymain);font-size:1.2em}
+.topics strong{font-weight:800}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">Sikho<span>Saath Mein</span></a>
+    <nav aria-label="Main">
+      <a href="#topics">Topics</a>
+      <a href="#about">About</a>
+      <a href="#downloads">Downloads</a>
+      <a class="ytlink" href="#youtube">YouTube</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Sikho <em>Saath Mein</em></h1>
+        <p>Learn Excel, Word and everyday computer skills step by step, with free practice files you can download.</p>
+        <a class="btn" href="#downloads">Get practice files</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="topics">
+    <div class="wrap">
+      <h2>What you can learn here</h2>
+      <ul class="topics">
+        <li><strong>MS Excel</strong></li>
+        <li><strong>MS Word</strong></li>
+        <li><strong>Computer Basics</strong></li>
+        <li><strong>Keyboard Shortcuts</strong></li>
+        <li><strong>Office Tips &amp; Tricks</strong></li>
+        <li><strong>Job-Related Skills</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="box">
+        <h2>About Sikho Saath Mein</h2>
+        <p>Our goal is simple — to make learning easy, practical and useful for everyone, especially beginners. You don't need to be an expert to start. Just learn one new thing every day and keep improving.</p>
+        <p><strong>Learn. Practice. Improve.</strong> Become 1% better every day.</p>
+        <p class="close">Aao, kuch naya seekhte hain — saath mein! ❤️</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="downloads">
+    <div class="wrap">
+      <h2>Free practice files</h2>
+      <p class="lead">Download the file, follow the video, and practice along.</p>
+      <div class="dl">
+        <div>
+          <h3>VLOOKUP: Beginner to Advanced</h3>
+          <p>Excel practice file with sample data for every example in the video.</p>
+        </div>
+        <a class="btn" href="VLOOKUP_Practice_File.xlsx" download>Download Excel file</a>
+      </div>
+      <p class="soon">More practice files will be added with every new video.</p>
+    </div>
+  </section>
+
+  <section class="yt" id="youtube">
+    <div class="wrap">
+      <h2>Watch on YouTube</h2>
+      <p>New tutorials every week. Subscribe so you never miss a lesson.</p>
+      <a class="btn" href="https://www.youtube.com/@YOUR_CHANNEL_NAME" target="_blank" rel="noopener">Visit the channel</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Sikho Saath Mein. All rights reserved.</div>
+</footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
